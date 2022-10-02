@@ -1,0 +1,212 @@
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #233437;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+
+}
+#logo{
+    width: 10%;
+    height: 7%;
+    padding-left: 2%;
+    float: left;
+    object-fit: cover;
+}
+nav{
+    padding-top: 1.5%;
+    width: 100%;
+    font-size: larger;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+}
+  
+li a{
+    display: block;
+    color: #083D77;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom-style: solid;
+    border-color: #083D77;;
+}
+.active {
+    border-bottom-style: solid;
+    border-color: #083D77;;
+}
+
+#mainBody{
+    background-color: #CAF0F8;
+    width: 80%;
+    float: left;
+}
+
+#mainHome{
+    width: 100%;
+    height: 100%;
+}
+.imgBeaches{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4%;
+
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#column_1 {
+    width: 33%;
+    height: 1250px;
+    float: left;
+    border-style: none solid none none;
+    border-right-color:#0096c7;
+    border-right-width: 2px;
+
+}
+
+#column_2 {
+    width: 33%;
+    height: 1250px;
+    float: left;
+    border-style: none solid none none;
+    border-right-color:#0096c7;
+    border-right-width: 2px;
+}
+
+#column_3 {
+    width: 33%;
+    height: 1250px;
+    float: left;
+}
+
+
+.titleColumn{
+    width: 100%;
+    text-align: center;
+    color: #03045e;
+    
+}
+
+.itemColumn{
+    padding-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptionText{
+    color: rgba(85, 85, 85, 0.777);
+    width: 90%;
+    height: 100%;
+
+}
+.titleItem {
+    
+    color: #083D77;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#sideBarLeft{
+    float: left;
+    width: 10%;
+}
+#sideBarRight{
+    float: left;
+    width: 10%;
+}
+#mainContent{
+    padding: 2% 5% 5% 5%;
+}
+
+@media only screen and (max-width: 768px ){
+    #sideBarLeft, #sideBarRight{
+        display: none;
+    }
+    #mainBody{
+        width: 100%;
+    }   
+
+    #titleColumnlUsa span {
+        display: none;
+    }
+    #titleColumnlUsa:after{
+        content: "USA beaches";
+    }
+}
+
+@media only screen and (max-width: 600px ){
+    #column_2 , #column_3{
+        float: none;
+    }
+    #column_1 , #column_2{
+        border-style: none none solid none;
+        border-bottom-color:#0096c7;
+    }
+    #column_1,  #column_2 , #column_3{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .titleColumn{
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 481px ){
+    #logo , #navLabelUsa span {
+        display: none;
+    }
+    #navLabelUsa:after{
+        content: "USA";
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px ){
+    nav {
+        font-size: medium;
+        margin: o auto;
+    }
+}
+
+@media only screen and (max-width: 280px ){
+    nav {
+        font-size: small;
+        margin: o auto;
+    }
+
+}

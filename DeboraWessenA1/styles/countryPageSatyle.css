@@ -1,0 +1,174 @@
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #233437;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+header{
+    padding-top: 2%;
+    display: flex;
+
+}
+#logo{
+    width: 10%;
+    height: 7%;
+    padding-left: 2%;
+    float: left;
+}
+nav{
+    padding-top: 1.5%;
+    width: 100%;
+    font-size: larger;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+}
+  
+li a{
+    display: block;
+    color: #083D77;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-bottom-style: solid;
+    border-color: #083D77;;
+}
+.active {
+    border-bottom-style: solid;
+    border-color: #083D77;;
+}
+
+#mainBody{
+    background-color: #CAF0F8;
+    width: 80%;
+    float: left;
+}
+
+
+footer{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+.titleColumnSubPage{
+    width: 100%;
+    text-align: center;
+    color: #03045e;
+    padding-top: 2%;
+    
+}
+
+.titleItemContent{
+    color: #083D77;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.imgMain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+
+}
+#sideBarLeft{
+    float: left;
+    width: 10%;
+}
+#sideBarRight{
+    float: left;
+    width: 10%;
+}
+#mainContent{
+    padding: 0 5% 5% 5%;
+}
+.resource{
+    font-size: x-small;
+}
+
+.subTitleItem{
+    color: #03045e;
+}
+
+.aboutBeaches{
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+@media only screen and (max-width: 768px ){
+    #sideBarLeft, #sideBarRight{
+        display: none;
+    }
+    #mainBody{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px ){
+    h1 {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: larger;
+    }
+    h3 {
+        font-size: medium;
+    }
+
+    #mainContent{
+        padding: 0 10% 5% 10%;
+    }
+
+}
+
+@media only screen and (max-width: 481px ){
+    #logo , #navLabelUsa span {
+        display: none;
+    }
+    #navLabelUsa:after{
+        content: "USA";
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px ){
+    nav {
+        font-size: medium;
+        margin: o auto;
+    }
+}
+
+@media only screen and (max-width: 280px ){
+    nav {
+        font-size: small;
+        margin: o auto;
+    }
+    .titleColumnSubPage{
+        font-size: x-large;
+    }
+}
